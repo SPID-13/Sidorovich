@@ -1,0 +1,462 @@
+html {
+  background-image: url(../img/mainbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+}
+
+.mainbutton {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-image: url(../img/torg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 58px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff00;
+}
+
+.mainbutton:hover {
+  background-image: url(../img/torgW.png);
+}
+
+.secondary {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-image: url(../img/leave.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 58px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff00;
+}
+
+.secondary:hover {
+  background-image: url(../img/leaveW.png);
+}
+
+.add {
+  position: absolute;
+  bottom: 0;
+  left: 95px;
+  width: 575px;
+  height: 250px;
+  background-image: url(../img/add.png);
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.lysik {
+  width: 55px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  cursor: default;
+}
+
+.card--mech {
+  position: fixed;
+  width: 200px;
+  height: 250px;
+  top: 15px;
+  left: 95px;
+}
+
+.card--sidr {
+  position: fixed;
+  width: 200px;
+  height: 250px;
+  top: 15px;
+  right: 95px;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(22, 22, 20, 0.3);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 45px 70px;
+  background-color: rgba(22, 22, 20, 0.8);
+  color: #dd9a49;
+  border-radius: 8px;
+  z-index: 101;
+  max-width: 350px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__wrapper--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__avatar {
+  width: 210px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.modal__close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.modal__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal__user--name {
+  font-size: 25px;
+}
+
+.modal__user--realname {
+  font-size: 20px;
+}
+
+.modal__rang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal__rang--name {
+  font-size: 25px;
+}
+
+.modal__rang--realname {
+  font-size: 20px;
+}
+
+.modal__login {
+  margin-bottom: 12px;
+}
+
+.modal__login--mail {
+  display: block;
+  width: 195px;
+  height: 27px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.modal__login--pass {
+  display: block;
+  width: 195px;
+  height: 27px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 7px;
+  padding-left: 15px;
+}
+
+.modal__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__buttons--button {
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #dd9a49;
+  color: black;
+  height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: wait;
+}
+
+.modal__buttons--button:hover {
+  color: #dd9a49;
+  background-color: black;
+}
+
+.modal__buttons--register {
+  text-decoration: none;
+  color: white;
+}
+
+.modal-register__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(22, 22, 20, 0.3);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-register__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-register__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 45px 70px;
+  background-color: rgba(22, 22, 20, 0.8);
+  color: #dd9a49;
+  border-radius: 8px;
+  z-index: 101;
+  max-width: 350px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-register__wrapper--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-register__avatar {
+  width: 210px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.modal-register__close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.modal-register__login {
+  margin-bottom: 12px;
+}
+
+.modal-register__login--mail {
+  display: block;
+  width: 195px;
+  height: 27px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.modal-register__login--pass {
+  display: block;
+  width: 195px;
+  height: 27px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 7px;
+  padding-left: 15px;
+}
+
+.modal-register__age {
+  width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.modal-register__age--title {
+  font-size: 25px;
+}
+
+.modal-register__age--input {
+  height: 27px;
+  width: 50px;
+  border: none;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+
+.modal-register__height {
+  width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.modal-register__height--title {
+  font-size: 25px;
+}
+
+.modal-register__height--input {
+  height: 27px;
+  width: 50px;
+  border: none;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+
+.modal-register__weight {
+  width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.modal-register__weight--title {
+  font-size: 25px;
+}
+
+.modal-register__weight--input {
+  height: 27px;
+  width: 50px;
+  border: none;
+  padding-left: 10px;
+  border-radius: 6px;
+}
+
+.modal-register__button {
+  width: 100%;
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 20px;
+  background-color: #dd9a49;
+  color: black;
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.modal-register__button:hover {
+  color: #dd9a49;
+  background-color: black;
+}
+
+.modal-traning__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(22, 22, 20, 0.3);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-traning__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-traning__sidrovich {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  padding: 45px 70px;
+  background-color: rgba(22, 22, 20, 0.8);
+  color: #dd9a49;
+  border-radius: 8px;
+  z-index: 101;
+  max-width: 350px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal-traning__mechan {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  padding: 45px 70px;
+  background-color: rgba(22, 22, 20, 0.8);
+  color: #dd9a49;
+  border-radius: 8px;
+  z-index: 101;
+  max-width: 350px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */

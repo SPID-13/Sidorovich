@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="css/style.css" />
+	<title>Sidorovich</title>
+	<style>
+		@font-face {
+			font-family: 'myfont';
+			/* Гарнитура шрифта */
+			src: url(fonts/mainfont.woff);
+			/* Путь к файлу со шрифтом */
+		}
+
+		button,
+		div {
+			font-family: 'myfont', 'mainfont', cursive;
+		}
+	</style>
+	<link rel="shortcut icon"
+		href="/img/favicon.jpg"
+		type="image/jpg">
+</head>
+
+<body>
+	<img src="img/cardMechan.png"
+		data-toggle="modal"
+		alt="card image"
+		class="card--mech">
+	<img src="img/cardSidr.png"
+		alt="card image"
+		class="card--sidr">
+	<button class="mainbutton"></button>
+	<button class="secondary"></button>
+	<a target="blank" href="https://store.steampowered.com/app/1643320/STALKER_2_Heart_of_Chernobyl/"
+		class="add"></a>
+	<a target="blank"
+		href="https://youtu.be/dQw4w9WgXcQ"
+		class="lysik"></a>
+	<div class="modal">
+		<div class="modal__overlay"></div>
+		<div class="modal__wrapper">
+			<img src="img/close.png"
+				data-toggle="close-modal"
+				alt=""
+				class="modal__close">
+			<img src="img/mechan.jfif"
+				alt=""
+				class="modal__avatar">
+			<div class="modal__user">
+				<span class="modal__user--name">Позывной</span>
+				<span class="modal__user--realname">Меченый</span>
+			</div>
+			<div class="modal__rang">
+				<span class="modal__rang--name">Твой ранг</span>
+				<span class="modal__rang--realname">Маслина</span>
+			</div>
+			<form action="#"
+				class="modal__login">
+				<input type="login"
+					placeholder="anomaliay@sidr.ru"
+					class="modal__login--mail">
+				<input type="password"
+					placeholder="bl**t"
+					class="modal__login--pass">
+			</form>
+			<div class="modal__buttons">
+				<button class="modal__buttons--button">Войти</button>
+				<a href="#"
+				data-toggle="register"
+				class="modal__buttons--register">Новенький в зоне?</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- modal-register -->
+	<div class="modal-register">
+		<div class="modal-register__overlay"></div>
+		<div class="modal-register__wrapper">
+			<img src="img/close.png"
+				data-toggle="close-modal-reg"
+				alt=""
+				class="modal-register__close">
+			<img src="img/mechan.jfif"
+				alt=""
+				class="modal-register__avatar">
+			<div class="modal-register__age">
+				<span class="modal-register__age--title">Возраст</span>
+				<input type="number" placeholder="21" class="modal-register__age--input">
+			</div>
+			<div class="modal-register__height">
+				<span class="modal-register__height--title">Рост</span>
+				<input type="number" placeholder="195" class="modal-register__height--input">
+			</div>
+			<div class="modal-register__weight">
+				<span class="modal-register__weight--title">Вес</span>
+				<input type="number" placeholder="75" class="modal-register__weight--input">
+			</div>
+			<form action="#"
+				class="modal-register__login">
+				<input type="login"
+					placeholder="anomaliay@sidr.ru"
+					class="modal-register__login--mail">
+				<input type="password"
+					placeholder="bl**t"
+					class="modal-register__login--pass">
+			</form>
+			<button class="modal-register__button" data-toggle="register-button">Заделаться</button>
+		</div>
+	</div>
+
+	<div class="modal-traning">
+		<div class="modal-traning__overlay"></div>
+
+			<div class="modal-traning__sidrovich">
+				<span class="modal-traning__name">Сидорович</span>
+				<a href="https://youtu.be/rKtOqpDQoFg" class="modal-traning__exersize">Анжуманя</a>
+				<a href="" class="modal-traning__exersize">Пресс качат</a>
+				<a href="https://youtu.be/FOAUldCYdrk?t=148" class="modal-traning__exersize">Бегит</a>
+			</div>
+			<div class="modal-traning__mechan">
+				<span class="modal-traning__name">Меченый</span>
+				<div class="modal-traning__answers">
+					<input type="checkbox">
+					<p class="modal-traning__answ">Готово</p>
+				</div>
+				<div class="modal-traning__answers">
+					<input type="checkbox">
+					<p class="modal-traning__answ">Готово</p>
+				</div>
+				<div class="modal-traning__answers">
+					<input type="checkbox">
+					<p class="modal-traning__answ">Готово</p>
+				</div>
+			</div>
+		
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

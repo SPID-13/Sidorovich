@@ -1,0 +1,325 @@
+
+html
+	background-image: url(../img/mainbg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	filter: blur(0px)
+
+.mainbutton
+	position: absolute
+	top: 50px
+	left: 50%
+	transform: translate(-50%)
+	background-image: url(../img/torg.png)
+	background-size: contain
+	background-repeat: no-repeat
+	width: 280px
+	height: 58px
+	border: none
+	cursor: pointer
+	background-color: #ffffff00
+	&:hover
+		background-image: url(../img/torgW.png)
+.secondary
+	position: absolute
+	bottom: 50px
+	left: 50%
+	transform: translate(-50%)
+	background-image: url(../img/leave.png)
+	background-size: contain
+	background-repeat: no-repeat
+	width: 280px
+	height: 58px
+	border: none
+	cursor: pointer
+	background-color: #ffffff00
+	&:hover
+		background-image: url(../img/leaveW.png)
+
+.add
+	position: absolute
+	bottom: 0
+	left: 95px
+	width: 575px
+	height: 250px
+	background-image: url(../img/add.png)
+	background-repeat: no-repeat
+	object-fit: cover
+	border-radius: 10px
+.lysik
+	width: 55px
+	height: 50px
+	border-radius: 50%
+	background-color: #ffffff
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%)
+	cursor: default
+.card
+	&--mech
+		position: fixed
+		width: 200px
+		height: 250px
+		top: 15px
+		left: 95px
+	&--sidr
+		position: fixed
+		width: 200px
+		height: 250px
+		top: 15px
+		right: 95px
+
+.modal
+	&__overlay
+		position: fixed
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		background: rgba(22,22,20,0.3)
+		z-index: 100
+		visibility: hidden
+		opacity: 0
+		&--visible
+			visibility: visible
+			opacity: 1
+	&__wrapper
+		position: fixed
+		top: 50%
+		left: 50%
+		padding: 45px 70px
+		background-color: rgba(22,22,20,0.8)
+		color: #dd9a49
+		border-radius: 8px
+		z-index: 101
+		max-width: 350px
+		transform: translate(-50%, -50%)
+		visibility: hidden
+		opacity: 0
+		&--visible
+			visibility: visible
+			opacity: 1
+	&__avatar
+		width: 210px
+		height: 120px
+		object-fit: cover
+		margin-bottom: 15px
+	&__close
+		width: 15px
+		height: 15px
+		position: absolute
+		right: 17px
+		top: 17px
+		cursor: pointer
+	&__user
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 10px
+		&--name
+			font-size: 25px
+		&--realname
+			font-size: 20px
+	&__rang
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 15px
+		&--name
+			font-size: 25px
+		&--realname
+			font-size: 20px
+	&__login
+		margin-bottom: 12px
+		&--mail
+			display: block
+			width: 195px
+			height: 27px
+			border: none
+			border-radius: 6px
+			margin-bottom: 10px
+			padding-left: 15px
+		&--pass
+			display: block
+			width: 195px
+			height: 27px
+			border: none
+			border-radius: 6px
+			margin-bottom: 7px
+			padding-left: 15px
+	&__buttons
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&--button
+			border: none
+			text-decoration: none
+			border-radius: 6px
+			font-size: 15px
+			background-color: #dd9a49
+			color: black
+			height: 30px
+			padding-left: 15px
+			padding-right: 15px
+			transition: 0.2s
+			cursor: wait
+			&:hover
+				color: #dd9a49
+				background-color: black
+		&--register
+			text-decoration: none
+			color: white
+
+.modal-register
+	&__overlay
+		position: fixed
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		background: rgba(22,22,20,0.3)
+		z-index: 100
+		visibility: hidden
+		opacity: 0
+		&--visible
+			visibility: visible
+			opacity: 1
+	&__wrapper
+		position: fixed
+		top: 50%
+		left: 50%
+		padding: 45px 70px
+		background-color: rgba(22,22,20,0.8)
+		color: #dd9a49
+		border-radius: 8px
+		z-index: 101
+		max-width: 350px
+		transform: translate(-50%, -50%)
+		visibility: hidden
+		opacity: 0
+		&--visible
+			visibility: visible
+			opacity: 1
+	&__avatar
+		width: 210px
+		height: 120px
+		object-fit: cover
+		margin-bottom: 15px
+	&__close
+		width: 15px
+		height: 15px
+		position: absolute
+		right: 17px
+		top: 17px
+		cursor: pointer
+	&__login
+		margin-bottom: 12px
+		&--mail
+			display: block
+			width: 195px
+			height: 27px
+			border: none
+			border-radius: 6px
+			margin-bottom: 10px
+			padding-left: 15px
+		&--pass
+			display: block
+			width: 195px
+			height: 27px
+			border: none
+			border-radius: 6px
+			margin-bottom: 7px
+			padding-left: 15px
+	&__age
+		width: 210px
+		display: flex
+		justify-content: space-between
+		margin-bottom: 10px
+		&--title
+			font-size: 25px
+		&--input
+			height: 27px
+			width: 50px
+			border: none
+			padding-left: 10px
+			border-radius: 6px
+	&__height
+		width: 210px
+		display: flex
+		justify-content: space-between
+		margin-bottom: 10px
+		&--title
+			font-size: 25px
+		&--input
+			height: 27px
+			width: 50px
+			border: none
+			padding-left: 10px
+			border-radius: 6px
+	&__weight
+		width: 210px
+		display: flex
+		justify-content: space-between
+		margin-bottom: 20px
+		&--title
+			font-size: 25px
+		&--input
+			height: 27px
+			width: 50px
+			border: none
+			padding-left: 10px
+			border-radius: 6px
+	&__button
+		width: 100%
+		border: none
+		text-decoration: none
+		border-radius: 6px
+		font-size: 20px
+		background-color: #dd9a49
+		color: black
+		height: 40px
+		padding-left: 15px
+		padding-right: 15px
+		transition: 0.2s
+		cursor: pointer
+		&:hover
+			color: #dd9a49
+			background-color: black
+
+.modal-traning
+	&__overlay
+		position: fixed
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		background: rgba(22,22,20,0.3)
+		z-index: 100
+		visibility: hidden
+		opacity: 0
+		&--visible
+			visibility: visible
+			opacity: 1
+	&__sidrovich
+		position: fixed
+		top: 10%
+		left: 50%
+		padding: 45px 70px
+		background-color: rgba(22,22,20,0.8)
+		color: #dd9a49
+		border-radius: 8px
+		z-index: 101
+		max-width: 350px
+		transform: translate(-50%, -50%)
+	&__mechan
+		position: fixed
+		top: 70%
+		left: 50%
+		padding: 45px 70px
+		background-color: rgba(22,22,20,0.8)
+		color: #dd9a49
+		border-radius: 8px
+		z-index: 101
+		max-width: 350px
+		transform: translate(-50%, -50%)
